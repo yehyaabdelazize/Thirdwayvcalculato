@@ -2,5 +2,12 @@
     <string name="app_name">Thirdwayv Calculator</string>
     <string name="Welcome">Welcome Sir</string>
     <string name="challenge">Thirdwayv challenge Calculator</string>
+    <string name="result">Result = </string>
+    <string name="undo">Undo</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multiply">*</string>
+    <string name="division">/</string>
+    <string name="redo">Redo</string>
 
 </resources>
