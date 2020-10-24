@@ -1,6 +1,7 @@
 package com.yahya.thirdwayvcalculator.ui.Splash;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,15 +10,18 @@ import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import com.yahya.thirdwayvcalculator.R;
+import com.yahya.thirdwayvcalculator.databinding.ActivitySplashBinding;
 import com.yahya.thirdwayvcalculator.ui.MainCalcutor.CalcuActivity;
 
 public class Splash extends AppCompatActivity {
 
-    private static int timeOut =3000;
+    private static int timeOut = 3000;
+    ActivitySplashBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_splash);
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -26,7 +30,7 @@ public class Splash extends AppCompatActivity {
                 startActivity(nextIntent);
                 finish();
             }
-        },timeOut);
+        }, timeOut);
 
     }
 

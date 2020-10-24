@@ -9,5 +9,7 @@
     <string name="multiply">*</string>
     <string name="division">/</string>
     <string name="redo">Redo</string>
+    <string name="equal">=</string>
+    <string name="hint_et">please enter the second operand</string>
 
 </resources>
