@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
-        android:focusableInTouchMode="true"
+        android:focusableInTouchMode="false"
         tools:context=".ui.MainCalcutor.CalcuActivity">
 
         <TextView
@@ -42,34 +42,34 @@
             android:id="@+id/lin_sec_oper"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_14sdp"
-            android:layout_marginTop="@dimen/_12sdp"
-            android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/back_et_operation"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="@dimen/_10sdp"
-            app:layout_constraintTop_toBottomOf="@+id/tv_result">
+            app:layout_constraintTop_toBottomOf="@+id/tv_result"
+            tools:layout_editor_absoluteX="16dp">
 
             <TextView
-                android:id="@+id/tv_sec_opr"
+                android:id="@+id/tv_oper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="@dimen/_16sdp" />
+
+            <EditText
+                android:id="@+id/et_sec_oper"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:hint="@string/hint_et"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_16sdp" />
-
-            <EditText
-                android:id="@+id/et_num2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
                 android:inputType="number"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp" />
-        </LinearLayout>
 
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/lin_btns"
