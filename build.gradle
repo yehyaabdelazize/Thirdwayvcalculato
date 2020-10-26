@@ -61,8 +61,12 @@ android {
         // Cardview dependency
         implementation 'androidx.cardview:cardview:1.0.0'
 
+        //Mvvm dependency
+        def lifecycle_version = "2.2.0"
         // ViewModel
-        implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+        implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+        // LiveData
+        implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
 
         // SDP dependency
         implementation 'com.intuit.ssp:ssp-android:1.0.5'

@@ -42,7 +42,9 @@
             android:id="@+id/lin_sec_oper"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
             android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/_12sdp"
             android:background="@drawable/back_et_operation"
             android:gravity="center"
             android:orientation="horizontal"
@@ -56,8 +58,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:textColor="@color/black"
-                android:visibility="gone"
-                android:textSize="@dimen/_16sdp" />
+                android:textSize="@dimen/_16sdp"
+                android:visibility="gone" />
 
             <EditText
                 android:id="@+id/et_sec_oper"

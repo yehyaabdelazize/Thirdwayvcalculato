@@ -43,7 +43,8 @@ public class CalcuAdapter extends RecyclerView.Adapter<CalcuAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(CalcuAdapter.ViewHolder viewHolder, int i) {
-        viewHolder.operation.setText(operations.get(i).toString());
+        viewHolder.operation.setText(operations.get(i).getOperation());
+
     }
 
     @Override

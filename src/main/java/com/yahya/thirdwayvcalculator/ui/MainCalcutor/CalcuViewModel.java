@@ -9,6 +9,6 @@ import java.util.Observable;
 
 public class CalcuViewModel extends ViewModel {
 
-    MutableLiveData<OperationModel> liveData=new MutableLiveData<>();
+    MutableLiveData<OperationModel> liveData = new MutableLiveData<>();
 
 }
