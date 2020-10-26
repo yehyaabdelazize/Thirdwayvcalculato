@@ -29,7 +29,23 @@ public class CalcuActivity extends AppCompatActivity {
         list = new ArrayList<>();
         // initialling variable Result on starting with zero (0.0)
         calcuBinding.tvResult.setText("" + result);
-//
+
+        //impl on click button Undo
+        calcuBinding.btnUndo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        //impl on click button Rndo
+        calcuBinding.btnRedo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
 
         // impl on clicking button ( + )
         calcuBinding.btnPlus.setOnClickListener(view -> {
@@ -85,12 +101,12 @@ public class CalcuActivity extends AppCompatActivity {
         });
 
         CalcuAdapter adapter = new CalcuAdapter(getApplicationContext(), list);
-
         // impl on clicking button ( / )
         calcuBinding.btnEqual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                //not working
                 if (calcuBinding.etSecOper.toString().isEmpty() && calcuBinding.tvOper.toString().isEmpty()) {
                     Toast.makeText(CalcuActivity.this, "You Must Enter Operator First Then Number ...", Toast.LENGTH_SHORT).show();
                 } else {
