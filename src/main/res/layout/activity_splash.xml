@@ -9,23 +9,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorPrimary"
-        tools:context=".ui.Splash.Splash">
+        tools:context=".ui.splash.Splash">
 
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/splash_iv"
-            android:layout_width="match_parent"
+            android:layout_width="@dimen/_250sdp"
             android:layout_height="@dimen/_200sdp"
             android:layout_marginStart="@dimen/_60sdp"
             android:layout_marginEnd="@dimen/_60sdp"
-            android:scaleType="fitXY"
             android:src="@drawable/splash_img"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.288" />
+            app:layout_constraintVertical_bias="0.295" />
 
         <TextView
             android:id="@+id/wel_tv"

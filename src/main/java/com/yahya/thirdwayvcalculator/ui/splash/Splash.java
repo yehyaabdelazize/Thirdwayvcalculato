@@ -1,4 +1,4 @@
-package com.yahya.thirdwayvcalculator.ui.Splash;
+package com.yahya.thirdwayvcalculator.ui.splash;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -6,12 +6,11 @@ import androidx.databinding.DataBindingUtil;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.animation.AnimationUtils;
-import android.widget.TextView;
 
 import com.yahya.thirdwayvcalculator.R;
 import com.yahya.thirdwayvcalculator.databinding.ActivitySplashBinding;
-import com.yahya.thirdwayvcalculator.ui.MainCalcutor.CalcuActivity;
+import com.yahya.thirdwayvcalculator.ui.maincalculator.CalcuActivity;
+
 
 public class Splash extends AppCompatActivity {
 

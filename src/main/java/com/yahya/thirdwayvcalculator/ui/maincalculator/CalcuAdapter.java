@@ -1,10 +1,9 @@
-package com.yahya.thirdwayvcalculator.ui.MainCalcutor;
+package com.yahya.thirdwayvcalculator.ui.maincalculator;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -43,7 +42,7 @@ public class CalcuAdapter extends RecyclerView.Adapter<CalcuAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(CalcuAdapter.ViewHolder viewHolder, int i) {
-        viewHolder.operation.setText(operations.get(i).getOperation());
+        viewHolder.operation.setText(operations.get(i).getSign()+operations.get(i).getOperation());
 
     }
 

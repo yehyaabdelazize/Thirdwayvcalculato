@@ -68,6 +68,8 @@ android {
         // LiveData
         implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
 
+        implementation 'android.arch.lifecycle:extensions:1.1.0'
+
         // SDP dependency
         implementation 'com.intuit.ssp:ssp-android:1.0.5'
         implementation 'com.intuit.sdp:sdp-android:1.0.5'

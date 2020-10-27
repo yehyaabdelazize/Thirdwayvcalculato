@@ -2,9 +2,19 @@ package com.yahya.thirdwayvcalculator.pojo.models;
 
 public class OperationModel {
     String operation;
+    String sign;
 
-    public OperationModel(String operation) {
+    public String getSign() {
+        return sign;
+    }
+
+    public void setSign(String sign) {
+        this.sign = sign;
+    }
+
+    public OperationModel(String operation, String sign) {
         this.operation = operation;
+        this.sign = sign;
     }
 
     public String getOperation() {
