@@ -7,9 +7,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 
 import android.os.Bundle;
-import android.text.TextUtils;
-import android.view.View;
-import android.widget.Toast;
+
 
 import com.yahya.thirdwayvcalculator.R;
 import com.yahya.thirdwayvcalculator.databinding.ActivityCalcuBinding;
@@ -18,10 +16,22 @@ import com.yahya.thirdwayvcalculator.pojo.models.OperationModel;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Calcu activity.
+ */
 public class CalcuActivity extends AppCompatActivity {
 
+    /**
+     * The Calcu binding.
+     */
     public ActivityCalcuBinding calcuBinding;
+    /**
+     * The List.
+     */
     List<OperationModel> list;
+    /**
+     * The View model.
+     */
     CalcuViewModel viewModel;
 
     @Override

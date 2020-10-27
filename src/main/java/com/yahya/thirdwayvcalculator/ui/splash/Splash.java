@@ -12,9 +12,15 @@ import com.yahya.thirdwayvcalculator.databinding.ActivitySplashBinding;
 import com.yahya.thirdwayvcalculator.ui.maincalculator.CalcuActivity;
 
 
+/**
+ * The type Splash.
+ */
 public class Splash extends AppCompatActivity {
 
     private static int timeOut = 3000;
+    /**
+     * The Binding.
+     */
     ActivitySplashBinding binding;
 
     @Override

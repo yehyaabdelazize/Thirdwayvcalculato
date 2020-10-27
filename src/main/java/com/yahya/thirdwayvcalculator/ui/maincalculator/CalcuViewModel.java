@@ -17,15 +17,42 @@ import com.yahya.thirdwayvcalculator.pojo.models.OperationModel;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Calcu view model.
+ */
 public class CalcuViewModel extends ViewModel {
+    /**
+     * The Live data.
+     */
     MutableLiveData<List<OperationModel>> liveData = new MutableLiveData<>();
+    /**
+     * The Calcu binding.
+     */
     ActivityCalcuBinding calcuBinding;
+    /**
+     * The C.
+     */
     Context c;
+    /**
+     * The Result.
+     */
     double result = 0;
+    /**
+     * The Num 2.
+     */
     double num2;
+    /**
+     * The List.
+     */
     List<OperationModel> list;
 
 
+    /**
+     * Init.
+     *
+     * @param binding the binding
+     * @param context the context
+     */
     public void Init(ActivityCalcuBinding binding, Context context) {
         this.calcuBinding = binding;
         this.c = context;
@@ -34,10 +61,20 @@ public class CalcuViewModel extends ViewModel {
         liveData.setValue(list);
     }
 
+    /**
+     * Gets live data.
+     *
+     * @return the live data
+     */
     public LiveData<List<OperationModel>> getLiveData() {
         return liveData;
     }
 
+    /**
+     * On click.
+     *
+     * @param view the view
+     */
     @SuppressLint("SetTextI18n")
     public void onClick(View view) {
         switch (view.getId()) {
@@ -90,9 +127,9 @@ public class CalcuViewModel extends ViewModel {
 
                     calcu_operation();
 
-                    String op=calcuBinding.tvOper.getText().toString();
-                    String num=calcuBinding.etSecOper.getText().toString();
-                    list.add(new OperationModel(num,op));
+                    String op = calcuBinding.tvOper.getText().toString();
+                    String num = calcuBinding.etSecOper.getText().toString();
+                    list.add(new OperationModel(num, op));
                     liveData.setValue(list);
                     calcuBinding.tvOper.setText("");
                     calcuBinding.etSecOper.setText("");
@@ -112,7 +149,10 @@ public class CalcuViewModel extends ViewModel {
     }
 
 
-    //impl of calculation the operation for the Result
+    /**
+     * Calcu operation.
+     */
+//impl of calculation the operation for the Result
     @SuppressLint("SetTextI18n")
     public void calcu_operation() {
 
